@@ -1,0 +1,5 @@
+npx sequelize-cli model:generate --name User --attributes userId:string,name:string,role:string,password:string,bankAccount:string
+
+npx sequelize-cli model:generate --name Reimburse --attributes id:string,employeeName:string,departement:string,bussinessPurpose:string,submitterId:string,approverId:string,status:string,item:string,notes:string,reimburseProof:string,totalCost:float,dateFrom:date,dateTo:date
+
+npx sequelize-cli model:generate --name Item --attributes id:string,date:date,description:string,category:string,cost:float,transactionProof:string,status:string,submitterId:string,reimburseId:string
